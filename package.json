@@ -10,6 +10,8 @@
   },
   "scripts": {
     "build": "esbuild app/javascript/*.* --bundle --outdir=app/assets/builds",
+    "build:fonts": "find node_modules/govuk-frontend/govuk/assets/fonts/ | entr cp -rT node_modules/govuk-frontend/govuk/assets/fonts app/assets/builds/fonts",
+    "build:images": "find node_modules/govuk-frontend/govuk/assets/images/ | entr cp -rT node_modules/govuk-frontend/govuk/assets/images app/assets/builds/images",
     "build:css": "sass ./app/assets/stylesheets/application.sass.scss ./app/assets/builds/application.css --no-source-map --load-path=node_modules"
   }
 }
