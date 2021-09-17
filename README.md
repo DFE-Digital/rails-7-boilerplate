@@ -1,24 +1,18 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is a throwaway test intended to see how tricky it is to get Rails 7 working with GOV.UK assets.
 
-Things you may want to cover:
+The following things are included:
 
-* Ruby version
+* govuk-frontend bundled by [esbuild](evanw/esbuild) and [Dart Sass](https://sass-lang.com/dart-sass)
+* asset building (roughly) integrated with Foreman
+* govuk-components and govuk-formbuilder
+* no tests 😱
 
-* System dependencies
+## How to test it out
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+1. Install Ruby 3.0.2
+2. Clone this repo
+3. Bundle and Yarn
+3. `bin/dev`
+4. Browse to `https://localhost:3000`
