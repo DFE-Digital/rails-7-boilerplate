@@ -15,7 +15,7 @@ The following things are included:
 2. Clone this repo
 3. Bundle and Yarn
 3. `bin/dev`
-4. Browse to `https://localhost:3000`
+4. Browse to `http://localhost:3000`
 
 ## Preview
 
