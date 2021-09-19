@@ -1,3 +1,9 @@
 #!/usr/bin/env bash
 
+echo "🔤 copying govuk-frontend fonts to app/assets/builds"
+cp -rT node_modules/govuk-frontend/govuk/assets/fonts app/assets/builds/fonts
+
+echo "🖼️ copying govuk-frontend images to app/assets/builds"
+cp -rT node_modules/govuk-frontend/govuk/assets/images app/assets/builds/images
+
 foreman start -f Procfile.dev
